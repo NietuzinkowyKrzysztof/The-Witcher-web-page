@@ -21,7 +21,7 @@ function locked(){
 function playAudio(url){
     if(!lock){
         lock = true;
-        setTimeout(locked, 2000);
+        setTimeout(locked, 1500);
         
         new Audio(url).play();
     }
@@ -123,6 +123,7 @@ function playAudio(url){
         </section>
 
         <h3>Formularz kontaktowy</h3>
+        <div class="Formularz">
 			<form id="dane" name="dane">
 				<input type="text" class="form" id="imie" name="imie" placeholder="Imię"><br><br>
 				<input type="text" class="form" id="nazwisko" name="nazwisko" placeholder="Nazwisko"><br><br>
@@ -131,8 +132,9 @@ function playAudio(url){
 				<input type="reset" class="form" id="button" name="cls" value="WYCZYŚĆ">
 				<input type="button" class="form" id="button" name="send" onclick="wyslij()" value="WYŚLIJ">
             </form>
+            <br><br>
         <div id="wynik"></div>
-
+    </div>
 
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script>     
@@ -148,6 +150,7 @@ function playAudio(url){
                 }
             }
 </script>
+<br>
 <h3>Bibliografia</h3>
 <div class="Bibliografia">
 <p><a target="_blank" href="https://pl.wikipedia.org/wiki/Wiedźmin_(gra_komputerowa)">https://pl.wikipedia.org/wiki/Wiedźmin_(gra_komputerowa)</a></p>

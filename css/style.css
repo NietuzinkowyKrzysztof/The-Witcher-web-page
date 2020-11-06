@@ -17,7 +17,7 @@ h1 {
     font-family:font;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(114, 63, 63);
-    color: #dfdfdfc5;
+    color: #ffffff;
 }
 
 #w1, #w2, #w3 {
@@ -73,17 +73,17 @@ a > .screen:hover {
     cursor: pointer;
 }
 @keyframes medalion {
-    0% { right: 1px; top:1px;}
-    10% { right: 1px; top:-1px;}
-    20% { right: 1px; top:1px;}
-    30% { right: -1px; top:-1px;}
-    40% { right: 1px; top:1px;}
-    50% { right: -1px; top:1px;}
-    60% { right: 1px; top:1px;}
-    70% { right: -1px; top:1px;}
-    80% { right: -1px; top:-1px;}
-    90% { right: -1px; top:1px;}
-    100% { right: -1px; top:-1px;}
+    0% { right: 1px; top:1px; transform: rotate(2deg);}
+    10% { right: 1px; top:-1px; transform: rotate(-2deg)}
+    20% { right: 1px; top:1px; transform: rotate(1deg)}
+    30% { right: -1px; top:-1px; transform: rotate(-2deg)}
+    40% { right: 1px; top:1px; transform: rotate(-1deg)}
+    50% { right: -1px; top:1px; transform: rotate(2deg)}
+    60% { right: 1px; top:1px; transform: rotate(0deg)}
+    70% { right: -1px; top:1px; transform: rotate(-1deg)}
+    80% { right: -1px; top:-1px; transform: rotate(2deg)}
+    90% { right: -1px; top:1px; transform: rotate(-1deg)}
+    100% { right: -1px; top:-1px; transform: rotate(1deg)}
   }
 
 .medalion:hover{
@@ -182,10 +182,7 @@ height: 30px;}
 color: #d1d1d1a4;
 font-weight: bold;
 margin-bottom: 20px;
-height: 40px;}
-
-#dane{text-align: center;
-margin-bottom: 20px;}
+height: 100px;}
 
 footer{text-align: end;
 margin-right: 10px;
@@ -197,4 +194,19 @@ text-align: center;}
 a{color:#b4b4b4c4;
     word-wrap: break-word}
 
-.Bibliografia{text-align: center;}
+.Formularz{
+    background-color: #221f1fd0;
+    border: 3px solid rgb(126, 50, 50);
+    padding:20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;}
+
+.Bibliografia{background-color: #221f1fd0;
+    border: 3px solid rgb(126, 50, 50);
+    padding:20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
