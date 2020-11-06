@@ -1,5 +1,5 @@
+/*Specjalne podziękowania dla Mikołaja Czajkowskiego za użyczenie głosu */
 * {
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 @font-face {
@@ -14,10 +14,10 @@ header {
 h1 {
     font-size: 75px;
     margin-top: -10px;
-    font-family: font;
+    font-family:font;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(114, 63, 63);
-    color: #d1d1d1a4;
+    color: #dfdfdfc5;
 }
 
 #w1, #w2, #w3 {
@@ -35,13 +35,23 @@ article {
     flex-direction: column;
     padding:20px;
     color:rgb(138, 138, 138);
+    margin-bottom: 200px;
 }
 
 .obrazki{ display: flex;
 	justify-content: space-between;
     flex-direction: row;
     text-align: center;}
-    
+ 
+.w1{grid-area: w1;}  
+.w2{grid-area: w2;}
+.w3{grid-area: w3;}     
+
+nav{display: grid;
+grid-template-areas: "w1 w2 w3";
+width: 70%;
+margin: auto;
+margin-bottom: 180px;}
 
 a > .screen {
     width: 80%;
@@ -57,16 +67,36 @@ a > .screen:hover {
 	margin-left:1px;
 }
 
-.medalion {
+.medalion  {
     width: 170px;
     height: 170px;
     cursor: pointer;
 }
+@keyframes medalion {
+    0% { right: 1px; top:1px;}
+    10% { right: 1px; top:-1px;}
+    20% { right: 1px; top:1px;}
+    30% { right: -1px; top:-1px;}
+    40% { right: 1px; top:1px;}
+    50% { right: -1px; top:1px;}
+    60% { right: 1px; top:1px;}
+    70% { right: -1px; top:1px;}
+    80% { right: -1px; top:-1px;}
+    90% { right: -1px; top:1px;}
+    100% { right: -1px; top:-1px;}
+  }
 
+.medalion:hover{
+    animation-name: medalion;
+    animation-duration: 1s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
 .wiedzmin {
     margin: 0 10px 0 10px;
     text-align: center;
 }
+
 
 section {
     width: 80%;
@@ -84,11 +114,6 @@ body {
     background-attachment: fixed;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    width: auto;
-}
 
 #obrazek1 {
     width: auto;
@@ -102,36 +127,30 @@ nav {
 }
 
 @media only screen and (max-width: 1000px) {
-    nav {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+    nav {display: grid;
+        grid-template-areas: "w1"
+                             "w2"
+                             "w3";
+        margin: auto;}
+
     body {
         background-position: center;
     }
-    article {
-        display: flex;
-		flex-direction: column;
-		text-align: center;
-    }
+
     a > .screen {
-        width: 240px;
+        width: 250px;
         height: 140px;
         border: 3px solid rgb(126, 50, 50);
         margin-top: 10px;
     }
-    a > .screen:hover {
-        width: 220px;
-        height: 130px;
-	}
 	.obrazki{
         display: flex;
 		flex-direction: column;
-		text-align: center;}
+        text-align: center;}
+    
+    .Bibliografia{text-align: center;
+    padding:10px;}
 }
-
-footer{text-align: center;}
 
 .form{border: 2px solid rgb(126, 50, 50);
 background-color: #221f1f;
@@ -161,4 +180,21 @@ height: 30px;}
 
 #wynik{text-align: center;
 color: #d1d1d1a4;
-font-weight: bold;}
+font-weight: bold;
+margin-bottom: 20px;
+height: 40px;}
+
+#dane{text-align: center;
+margin-bottom: 20px;}
+
+footer{text-align: end;
+margin-right: 10px;
+color: #b4b4b47a}
+
+h3{font-family: font;
+text-align: center;}
+
+a{color:#b4b4b4c4;
+    word-wrap: break-word}
+
+.Bibliografia{text-align: center;}

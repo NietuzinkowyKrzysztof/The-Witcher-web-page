@@ -5,9 +5,28 @@
         <title>Wiedźmin</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <link href="css/lightbox.min.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="img/icon.png" type="image/png">
+        <meta name="keywords" content="The Witcher, Wiedźmin, Geralt z Rivii, 
+        Wiedźmin 3: Dziki Gon, Wiedźmin 2: Zabójcy Królów">
     </head>
 
     <body>
+        <script>
+var lock = false;
+
+function locked(){
+    lock = false;
+}
+
+function playAudio(url){
+    if(!lock){
+        lock = true;
+        setTimeout(locked, 2000);
+        
+        new Audio(url).play();
+    }
+}
+        </script>
         <header>
             <img class="medalion" src="img/Medalion.png" onclick="playAudio('audio/zaraza.mp4')" />
             <h1>Wiedźmin</h1>
@@ -15,101 +34,32 @@
 
         <nav>
             <div class="wiedzmin">
-				<a href="#w3"><img id="obrazek1" src="img/Wiedzmin3.jpg" /></a>
+                <a href="#w1" class="w1"><img id="obrazek1" src="img/Wiedzmin1.jpg" /></a>
             </div>
 
             <div class="wiedzmin">
-                <a href="#w2"><img id="obrazek1" src="img/Wiedzmin2.jpg" /></a>
+                <a href="#w2" class="w2"><img id="obrazek1" src="img/Wiedzmin2.jpg" /></a>
             </div>
 
             <div class="wiedzmin">
-                <a href="#w1"><img id="obrazek1" src="img/Wiedzmin1.jpg" /></a>
+				<a href="#w3" class="w3" ><img id="obrazek1" src="img/Wiedzmin3.jpg" /></a>
             </div>
         </nav>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <br>
         <section>
-            <h2 id="w3">Wiedźmin 3: Dziki Gon</h2>
-            <article>
-                Wiedźmin 3: Dziki Gon (ang. The Witcher 3: Wild Hunt) – fabularna gra akcji wyprodukowana i wydana przez CD Projekt Red 19 maja 2015 na platformy Microsoft Windows, PlayStation 4 i Xbox One. Gra jest kontynuacją wydanego w
-                2007 roku Wiedźmina oraz Wiedźmina 2: Zabójców królów, który miał swoją premierę w 2011 roku. Tak jak poprzednie części, opowiada ona historię tytułowego wiedźmina – Geralta z Rivii – i jest osadzona w świecie wiedźmina,
-				którego twórcą jest Andrzej Sapkowski. Produkcja jest ostatnią częścią cyklu, którego głównym bohaterem jest tytułowy wiedźmin, razem z nią stanowiącego trylogię.
-				<br />
-                Akcja Wiedźmina 3 rozgrywa się w fikcyjnym świecie fantasy stworzonym przez pisarza Andrzeja Sapkowskiego w serii opowiadań i powieści. Gracz ma okazję zwiedzić wyspy Skellige, Wolne Miasto Novigrad, Oxenfurt, wiedźmińskie
-                siedliszcze Kaer Morhen czy ponure moczary Velen. Gra rozpoczyna się pół roku po wydarzeniach z poprzedniej części. Wiedźmin Geralt odzyskuje w końcu pamięć, nie ma jednak zamiaru przyłączyć się do którejkolwiek ze stron
-				konfliktu. Zamiast tego zajmuje się on poszukiwaniem Dzikiego Gonu oraz swoich bliskich, m.in. Yennefer z Vengerbergu i Ciri.
-				<br />
-                Gracz steruje postacią Geralta z Rivii z perspektywy trzeciej osoby poruszającym się po otwartym świecie. W niektórych fragmentach gry gracz wciela się w postać Ciri. Poza poruszaniem się po lądzie można także pływać zarówno
-                na jak i pod powierzchnią wody. W celu szybszego przemieszczania się gracz może skorzystać z punktów szybkiej podróży, łodzi lub koni. W trakcie gry gracz znajduje przedmioty, które są przechowywane w ekwipunku. Po
-                wcześniejszym uzbieraniu potrzebnych składników alchemicznych i rzemieślniczych Geralt może stworzyć eliksiry, odwary, petardy oraz oleje czy też ulepszyć swój oręż.
-                <br />
-                Koszt produkcji przekroczył 300 milionów złotych. Główny zespół pracujący nad grą liczył 240 osób. Łącznie w procesie produkcji zaangażowane było ponad 1500 osób. Gra została pierwszy raz publicznie pokazana na konferencji
-                Microsoftu podczas targów E3 w czerwcu 2013 roku. Wiedźmin 3 został stworzony przy pomocy silnika REDengine 3. Użyto także takich technologii jak SpeedTree, PhysX czy Nvidia HairWorks. Duże zmiany zaszły w zakresie
-                odbywanych walk. Całkowicie przebudowano sztuczną inteligencję przeciwników Geralta, a on sam otrzymał więcej animacji, które wykorzystywane są w walkach. Akcja gry ma miejsce w otwartym świecie, trzydzieści razy większym od
-                tego z poprzedniej części.
-                <br><br>
-
-				<div class="obrazki">
-				<a href="img/w31.jpg" data-lightbox="w3"><img class="screen" src="img/w31.jpg" alt="image-1" /></a>
-				<a href="img/w32.jpg" data-lightbox="w3"><img class="screen" src="img/w32.jpg" alt="image-1" /></a>
-				<a href="img/w33.jpg" data-lightbox="w3"><img class="screen" src="img/w33.jpg" alt="image-1" /></a>
-				</div>
-			</article>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-            <h2 id="w2">Wiedźmin 2: Zabójcy Królów</h2>
-            <article>Wiedźmin 2: Zabójcy królów (ang. The Witcher 2: Assassins of Kings) – komputerowa fabularna gra akcji w reżyserii Adama Badowskiego, osadzona w świecie wiedźmina Andrzeja Sapkowskiego i wyprodukowana przez CD Projekt Red we współpracy z Agorą SA. 
-				Jej premiera odbyła się 17 maja 2011 roku na platformie Microsoft Windows, natomiast rok później pojawiły się wersje na konsolę Xbox 360 i system operacyjny OS X.
-				<br>
-				Wiedźmin 2 jest kontynuacją gry komputerowej Wiedźmin z 2007 roku. W drugiej części cyklu gracz ponownie wciela się w rolę Geralta z Rivii – wiedźmina, który specjalizuje się w odpłatnym zabijaniu potworów. 
-				Narracja gry jest skupiona na wydarzeniach zaistniałych po morderstwie dokonanym na władcy krainy zwanej Temerią, w której toczy się akcja Wiedźmina 2. 
-				Geralt musi odszukać innego wiedźmina, który dopuścił się zabójstwa króla, co spowodowało destabilizację królestwa.
-				<br>
-				Akcja Wiedźmina 2 toczy się w świecie wiedźmina, fantastycznym uniwersum stworzonym przez pisarza Andrzeja Sapkowskiego. W szczególności zaś przedmiotem zainteresowania ze strony narratora jest Temeria. 
-				Kilka miesięcy po wydarzeniach z pierwszej części serii rządzona przez króla Foltesta (głosu użyczył mu Adam Bauman) kraina jest areną zmagań zwaśnionych ludzi z innymi rasami, w szczególności elfami. 
-				Ci ostatni za sprawą szpiega Iorvetha zawierają pakt z Zabójcą Królów, tajemniczym łowcą głów, którego interwencja może przyczynić się do zamachu na Foltesta.
-				<br>
-				Wiedźmin 2: Zabójcy królów to fabularna gra akcji, łącząca elementy rozwoju grywalnej postaci z sekwencjami zręcznościowymi. Gracz wciela się w Geralta (sporadycznie kierując innymi postaciami), obserwując akcję z perspektywy trzeciej osoby.
-				Rozgrywka toczy się w świecie pozbawionym otwartej struktury cechującej na przykład serię The Elder Scrolls – gra podzielona jest na akty stanowiące zwartą całość.
-				W lewym górnym rogu ekranu umieszczony jest pasek oznaczający liczbę punktów zdrowia oraz many, przy czym ta ostatnia służy do rzucania zaklęć zwanych Znakami. 
-				Prawy górny róg ekranu zajmuje minimapa pokazująca położenie gracza w świecie gry
-                <br><br>
-                <div class="obrazki">
-					<a href="img/w21.jpg" data-lightbox="w2"><img class="screen" src="img/w21.jpg" alt="image-1" /></a>
-					<a href="img/w22.jpg" data-lightbox="w2"><img class="screen" src="img/w22.jpg" alt="image-1" /></a>
-					<a href="img/w23.jpg" data-lightbox="w2"><img class="screen" src="img/w23.jpg" alt="image-1" /></a>
-					</div>
-			</article>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
             <h2 id="w1">Wiedźmin</h2>
             <article>
 				Wiedźmin (wydany pod nazwą międzynarodową The Witcher, w Czechach jako Zaklínač, w Rosji jako Wied´mak (Ведьмак)) – komputerowa gra fabularna w konwencji fantasy, wyprodukowana przez CD Projekt Red i wydana przez Atari.
 				Jej premiera odbyła się 26 października 2007 roku na platformie Microsoft Windows, natomiast w kwietniu 2012 roku ukazała się jej wersja na komputery z systemem OS X.
 				<br>
 				Akcja gry toczy się w świecie wiedźmina, stworzonym przez Andrzeja Sapkowskiego. Głównym bohaterem gry, w którego wciela się gracz, jest Geralt z Rivii – jeden z wiedźminów, czyli postaci o nadludzkich zdolnościach, zajmujących się zwykle zabijaniem potworów atakujących siedliska ludzi. 
-				Po wydarzeniach z Sagi o wiedźminie Geralt, pozbawiony pamięci, próbuje na nowo odnaleźć się w mrocznej rzeczywistości świata gry, pozbawionej wyraźnego podziału na dobro i zło. W miarę rozwoju gry Geralt jest zmuszony do podjęcia licznych wyborów moralnych, rzutujących na dalsze losy napotkanych bohaterów niezależnych. 
+                Po wydarzeniach z Sagi o wiedźminie Geralt, pozbawiony pamięci, próbuje na nowo odnaleźć się w mrocznej rzeczywistości świata gry, pozbawionej wyraźnego podziału na dobro i zło. 
+                W miarę rozwoju gry Geralt jest zmuszony do podjęcia licznych wyborów moralnych, rzutujących na dalsze losy napotkanych bohaterów niezależnych. 
 				Pomimo próby oddania klimatu książek Sapkowskiego, komputerowy Wiedźmin nie uzyskał jednak oficjalnego wsparcia ze strony pisarza.
 				<br>
 				Akcja gry ma miejsce w podobnych do średniowiecza realiach fantasy. Są one oparte na świecie wiedźmina z powieści Andrzeja Sapkowskiego. Pisarz opierał się na formule fantasy, ale korzystał też z wielu alegorii i odniesień do innych gatunków, tradycji i historii. 
-				Los zaciera wśród jego bohaterów jednoznaczny podział na dobro i zło, stawiając ich przed dylematami i konsekwencjami pełnymi sprzeczności i niepewności.
+                Los zaciera wśród jego bohaterów jednoznaczny podział na dobro i zło, stawiając ich przed dylematami i konsekwencjami pełnymi sprzeczności i niepewności.
+                <br>
 				W Wiedźminie gracz wciela się w postać głównego bohatera świata Sapkowskiego, Geralta z Rivii. Jest on jednym z wiedźminów – postaci o nadludzkich zdolnościach, zajmujących się zwykle zabijaniem potworów atakujących siedliska ludzi.
 				Zakończenie Sagi o wiedźminie podsuwa kilka różnych finałów losów Geralta (między innymi jego zabójstwo), ale akcja gry toczy się po wydarzeniach w Sadze, gdy udaje mu się przeżyć. 
 				Stąd fabuła Wiedźmina nie uzyskała oficjalnego wsparcia Sapkowskiego.
@@ -120,12 +70,59 @@
 					<a href="img/w13.jpg" data-lightbox="w1"><img class="screen" src="img/w13.jpg" alt="image-1" /></a>
 					</div>
 			</article>
-		</section>
-		<br><br><br>
 
-		
-		
-		<footer>
+           
+        <h2 id="w2">Wiedźmin 2: Zabójcy Królów</h2>
+        <article>Wiedźmin 2: Zabójcy królów (ang. The Witcher 2: Assassins of Kings) – komputerowa fabularna gra akcji w reżyserii Adama Badowskiego, osadzona w świecie wiedźmina Andrzeja Sapkowskiego i wyprodukowana przez CD Projekt Red we współpracy z Agorą SA. 
+            Jej premiera odbyła się 17 maja 2011 roku na platformie Microsoft Windows, natomiast rok później pojawiły się wersje na konsolę Xbox 360 i system operacyjny OS X.
+            <br>
+            Wiedźmin 2 jest kontynuacją gry komputerowej Wiedźmin z 2007 roku. W drugiej części cyklu gracz ponownie wciela się w rolę Geralta z Rivii – wiedźmina, który specjalizuje się w odpłatnym zabijaniu potworów. 
+            Narracja gry jest skupiona na wydarzeniach zaistniałych po morderstwie dokonanym na władcy krainy zwanej Temerią, w której toczy się akcja Wiedźmina 2. 
+            Geralt musi odszukać innego wiedźmina, który dopuścił się zabójstwa króla, co spowodowało destabilizację królestwa.
+            <br>
+            Akcja Wiedźmina 2 toczy się w świecie wiedźmina, fantastycznym uniwersum stworzonym przez pisarza Andrzeja Sapkowskiego. W szczególności zaś przedmiotem zainteresowania ze strony narratora jest Temeria. 
+            Kilka miesięcy po wydarzeniach z pierwszej części serii rządzona przez króla Foltesta (głosu użyczył mu Adam Bauman) kraina jest areną zmagań zwaśnionych ludzi z innymi rasami, w szczególności elfami. 
+            Ci ostatni za sprawą szpiega Iorvetha zawierają pakt z Zabójcą Królów, tajemniczym łowcą głów, którego interwencja może przyczynić się do zamachu na Foltesta.
+            <br>
+            Wiedźmin 2: Zabójcy królów to fabularna gra akcji, łącząca elementy rozwoju grywalnej postaci z sekwencjami zręcznościowymi. Gracz wciela się w Geralta (sporadycznie kierując innymi postaciami), obserwując akcję z perspektywy trzeciej osoby.
+            Rozgrywka toczy się w świecie pozbawionym otwartej struktury cechującej na przykład serię The Elder Scrolls – gra podzielona jest na akty stanowiące zwartą całość.
+            W lewym górnym rogu ekranu umieszczony jest pasek oznaczający liczbę punktów zdrowia oraz many, przy czym ta ostatnia służy do rzucania zaklęć zwanych Znakami. 
+            Prawy górny róg ekranu zajmuje minimapa pokazująca położenie gracza w świecie gry
+            <br><br>
+            <div class="obrazki">
+                <a href="img/w21.jpg" data-lightbox="w2"><img class="screen" src="img/w21.jpg" alt="image-1" /></a>
+                <a href="img/w22.jpg" data-lightbox="w2"><img class="screen" src="img/w22.jpg" alt="image-1" /></a>
+                <a href="img/w23.jpg" data-lightbox="w2"><img class="screen" src="img/w23.jpg" alt="image-1" /></a>
+                </div>
+        </article>
+            <h2 id="w3">Wiedźmin 3: Dziki Gon</h2>
+            <article>
+                Wiedźmin 3: Dziki Gon (ang. The Witcher 3: Wild Hunt) – fabularna gra akcji wyprodukowana i wydana przez CD Projekt Red 19 maja 2015 na platformy Microsoft Windows, PlayStation 4 i Xbox One. Gra jest kontynuacją wydanego w
+                2007 roku Wiedźmina oraz Wiedźmina 2: Zabójców królów, który miał swoją premierę w 2011 roku. Tak jak poprzednie części, opowiada ona historię tytułowego wiedźmina – Geralta z Rivii – i jest osadzona w świecie wiedźmina,
+				którego twórcą jest Andrzej Sapkowski. Produkcja jest ostatnią częścią cyklu, którego głównym bohaterem jest tytułowy wiedźmin, razem z nią stanowiącego trylogię.
+				<br>
+                Akcja Wiedźmina 3 rozgrywa się w fikcyjnym świecie fantasy stworzonym przez pisarza Andrzeja Sapkowskiego w serii opowiadań i powieści. Gracz ma okazję zwiedzić wyspy Skellige, Wolne Miasto Novigrad, Oxenfurt, wiedźmińskie
+                siedliszcze Kaer Morhen czy ponure moczary Velen. Gra rozpoczyna się pół roku po wydarzeniach z poprzedniej części. Wiedźmin Geralt odzyskuje w końcu pamięć, nie ma jednak zamiaru przyłączyć się do którejkolwiek ze stron
+				konfliktu. Zamiast tego zajmuje się on poszukiwaniem Dzikiego Gonu oraz swoich bliskich, m.in. Yennefer z Vengerbergu i Ciri.
+				<br>
+                Gracz steruje postacią Geralta z Rivii z perspektywy trzeciej osoby poruszającym się po otwartym świecie. W niektórych fragmentach gry gracz wciela się w postać Ciri. Poza poruszaniem się po lądzie można także pływać zarówno
+                na jak i pod powierzchnią wody. W celu szybszego przemieszczania się gracz może skorzystać z punktów szybkiej podróży, łodzi lub koni. W trakcie gry gracz znajduje przedmioty, które są przechowywane w ekwipunku. Po
+                wcześniejszym uzbieraniu potrzebnych składników alchemicznych i rzemieślniczych Geralt może stworzyć eliksiry, odwary, petardy oraz oleje czy też ulepszyć swój oręż.
+                <br>
+                Koszt produkcji przekroczył 300 milionów złotych. Główny zespół pracujący nad grą liczył 240 osób. Łącznie w procesie produkcji zaangażowane było ponad 1500 osób. Gra została pierwszy raz publicznie pokazana na konferencji
+                Microsoftu podczas targów E3 w czerwcu 2013 roku. Wiedźmin 3 został stworzony przy pomocy silnika REDengine 3. Użyto także takich technologii jak SpeedTree, PhysX czy Nvidia HairWorks. Duże zmiany zaszły w zakresie
+                odbywanych walk. Całkowicie przebudowano sztuczną inteligencję przeciwników Geralta, a on sam otrzymał więcej animacji, które wykorzystywane są w walkach. Akcja gry ma miejsce w otwartym świecie, trzydzieści razy większym od
+                tego z poprzedniej części.
+                <br><br>
+				<div class="obrazki">
+				<a href="img/w31.jpg" data-lightbox="w3"><img class="screen" src="img/w31.jpg" alt="image-1" /></a>
+				<a href="img/w32.jpg" data-lightbox="w3"><img class="screen" src="img/w32.jpg" alt="image-1" /></a>
+				<a href="img/w33.jpg" data-lightbox="w3"><img class="screen" src="img/w33.jpg" alt="image-1" /></a>
+				</div>
+			</article>
+        </section>
+
+        <h3>Formularz kontaktowy</h3>
 			<form id="dane" name="dane">
 				<input type="text" class="form" id="imie" name="imie" placeholder="Imię"><br><br>
 				<input type="text" class="form" id="nazwisko" name="nazwisko" placeholder="Nazwisko"><br><br>
@@ -133,16 +130,12 @@
 				<textarea id="wpisz" class="form" name="wpisz" placeholder="Wpisz wiadomość" rows="10" cols="60"></textarea><br><br>
 				<input type="reset" class="form" id="button" name="cls" value="WYCZYŚĆ">
 				<input type="button" class="form" id="button" name="send" onclick="wyslij()" value="WYŚLIJ">
-			</form>
-
-        </footer>
-        <br><br><br>
+            </form>
         <div id="wynik"></div>
-        <br><br><br><br><br><br>
 
 
 <script src="js/lightbox-plus-jquery.min.js"></script>
-<script>
+<script>     
             function wyslij(){
                 var imie = document.dane.imie.value;
                 var nazwisko = document.dane.nazwisko.value;
@@ -154,10 +147,14 @@
                     document.getElementById("wynik").innerHTML=imie.toUpperCase()+" "+nazwisko.toUpperCase()+"<br>"+"<br>"+"Dziękuję, postaram się odpowiedzieć Ci w najbliższym czasie na adres:"+"<br>"+"<br>"+email;
                 }
             }
-            function playAudio(url) {
-  new Audio(url).play();
-}
-        </script>
 </script>
+<h3>Bibliografia</h3>
+<div class="Bibliografia">
+<p><a target="_blank" href="https://pl.wikipedia.org/wiki/Wiedźmin_(gra_komputerowa)">https://pl.wikipedia.org/wiki/Wiedźmin_(gra_komputerowa)</a></p>
+<p><a targer="_blank"href="https://pl.wikipedia.org/wiki/Wiedźmin_2:_Zabójcy_królów">https://pl.wikipedia.org/wiki/Wiedźmin_2:_Zabójcy_królów</a></p>
+<p><a targer="_blank"href="https://pl.wikipedia.org/wiki/Wiedźmin_3:_Dziki_Gon">https://pl.wikipedia.org/wiki/Wiedźmin_3:_Dziki_Gon</a></p>
+<p><a targer="_blank"href="https://wall.alphacoders.com/big.php?i=587508&lang=Polish">https://wall.alphacoders.com/big.php?i=587508&lang=Polish</a></p>
+</div>
+<footer>Autor: Krzysztof Weichert</footer>
     </body>
 </html>
