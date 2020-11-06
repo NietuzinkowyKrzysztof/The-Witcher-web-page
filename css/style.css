@@ -21,9 +21,7 @@ h1 {
     -webkit-text-stroke-color: rgb(126, 50, 50);
 }
 
-#w1,
-#w2,
-#w3 {
+#w1, #w2, #w3 {
     font-size: 50px;
     margin-top: -10px;
     font-family: font;
@@ -38,7 +36,6 @@ article {
 	flex-direction: column;
 	padding: 10px;
 }
-#dupa{z-index: 1;}
 
 .obrazki{ display: flex;
 	justify-content: space-between;
@@ -131,3 +128,8 @@ nav {
 		flex-direction: column;
 		text-align: center;}
 }
+
+footer{text-align: center;}
+.form{border: 2px solid rgb(126, 50, 50);
+background-color: #221f1f;
+color:  #7a7a7a;}
