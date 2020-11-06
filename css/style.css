@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: font;
+    src: url(../fonts/LEMONMILK-Medium.otf);
+}
+
+header {
+    text-align: center;
+}
+
+
+
+h1 {
+    font-size: 75px;
+    margin-top: -10px;
+    font-family: font;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(126, 50, 50);
+}
+
+#w1,
+#w2,
+#w3 {
+    font-size: 50px;
+    margin-top: -10px;
+    font-family: font;
+    text-align: center;
+}
+
+article {
+    background-color: #221f1fbd;
+    border: 3px solid rgb(126, 50, 50);
+    display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 10px;
+}
+#dupa{z-index: 1;}
+
+.obrazki{ display: flex;
+	justify-content: space-between;
+	flex-direction: row;}
+
+a > .screen {
+    width: 400px;
+    height: 240px;
+    border: 3px solid rgb(126, 50, 50);
+    transition: 0.5s;
+	margin: 15px;
+	z-index: 300;
+}
+
+a > .screen:hover {
+    width: 410px;
+	height: 245px;
+	margin-left:1px;
+}
+
+.medalion {
+    width: 170px;
+	height: 170px;
+}
+
+.wiedzmin {
+    margin: 0 10px 0 10px;
+    text-align: center;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-image: url(../img/tlo.png);
+    color: #ffffff;
+    background-size: cover;
+    background-repeat: repeat;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+#obrazek1 {
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+    border: 3px solid rgb(126, 50, 50);
+}
+
+.wiedzmin:hover #obrazek1 {
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    body {
+        background-position: center;
+    }
+    article {
+        display: flex;
+		flex-direction: column;
+		text-align: center;
+    }
+    a > .screen {
+        width: 240px;
+        height: 140px;
+        border: 3px solid rgb(126, 50, 50);
+        margin-top: 10px;
+    }
+    a > .screen:hover {
+        width: 260px;
+        height: 150px;
+	}
+	.obrazki{
+        display: flex;
+		flex-direction: column;
+		text-align: center;}
+}
