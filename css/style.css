@@ -11,14 +11,13 @@ header {
     text-align: center;
 }
 
-
-
 h1 {
     font-size: 75px;
     margin-top: -10px;
     font-family: font;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(126, 50, 50);
+    -webkit-text-stroke-color: rgb(114, 63, 63);
+    color: #afafafa4;
 }
 
 #w1, #w2, #w3 {
@@ -32,27 +31,28 @@ article {
     background-color: #221f1fbd;
     border: 3px solid rgb(126, 50, 50);
     display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	padding: 10px;
+	align-self: center;
+    flex-direction: column;
+    padding:20px;
 }
 
 .obrazki{ display: flex;
 	justify-content: space-between;
-	flex-direction: row;}
+    flex-direction: row;
+    text-align: center;}
+    
 
 a > .screen {
-    width: 400px;
-    height: 240px;
+    width: 80%;
+    height: auto;
     border: 3px solid rgb(126, 50, 50);
     transition: 0.5s;
-	margin: 15px;
-	z-index: 300;
+    margin: auto;
 }
 
 a > .screen:hover {
-    width: 410px;
-	height: 245px;
+    width: 85%;
+	height: auto;
 	margin-left:1px;
 }
 
