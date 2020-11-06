@@ -52,7 +52,7 @@ a > .screen {
 }
 
 a > .screen:hover {
-    width: 85%;
+    width: 75%;
 	height: auto;
 	margin-left:1px;
 }
@@ -122,8 +122,8 @@ nav {
         margin-top: 10px;
     }
     a > .screen:hover {
-        width: 260px;
-        height: 150px;
+        width: 220px;
+        height: 130px;
 	}
 	.obrazki{
         display: flex;
@@ -142,18 +142,23 @@ color:  #7a7a7a;}
     min-height: 100px;
     max-width: 500px;
     max-height: 250px;
+    width:90%;
 }
 
-#imie{width: 160px;
+#imie{width: 180px;
 height: 30px;}
 
-#nazwisko{width: 160px;
+#nazwisko{width: 180px;
     height: 30px;}
 
-#email{width: 160px;
+#email{width: 180px;
         height: 30px;}
 
 #button{
     width: 80px;
     height: 30px;;
 }
+
+#wynik{text-align: center;
+color: #d1d1d1a4;
+font-weight: bold;}
