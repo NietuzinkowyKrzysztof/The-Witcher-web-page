@@ -131,12 +131,14 @@
 				<input type="text" class="form" id="nazwisko" name="nazwisko" placeholder="Nazwisko"><br><br>
 				<input type="text" class="form" id="email" name="email" placeholder="E-mail"><br><br>
 				<textarea id="wpisz" class="form" name="wpisz" placeholder="Wpisz wiadomość" rows="10" cols="60"></textarea><br><br>
-				<input type="reset" class="form" id="cls" name="cls" value="WYCZYŚĆ">
-				<input type="button" class="form" id="send" name="send" onclick="wyslij()" value="WYŚLIJ">
+				<input type="reset" class="form" id="button" name="cls" value="WYCZYŚĆ">
+				<input type="button" class="form" id="button" name="send" onclick="wyslij()" value="WYŚLIJ">
 			</form>
 
-		</footer>
-<br><br>
+        </footer>
+        <br><br><br>
+        <div id="wynik"></div>
+        <br><br><br><br><br><br>
 
 
 <script src="js/lightbox-plus-jquery.min.js"></script>
@@ -146,15 +148,9 @@
                 var nazwisko = document.dane.nazwisko.value;
                 var email = document.dane.email.value;
                 if(imie == null || imie == "" || nazwisko == null || nazwisko == "" || email == null || email == "" || document.dane.wpisz.value == "" || document.dane.wpisz.value == null){
-                    document.getElementById("wynik").style.color="#5E92F2";
-                    document.getElementById("wynik").style.fontSize="40px";
                     document.getElementById("wynik").innerHTML="Wypełnij wszystkie pola!";
                 }
                 else{
-                    document.getElementById("wynik").style.color="#5E92F2";
-                    document.getElementById("wynik").style.fontWeight="bold";
-                    document.getElementById("wynik").style.fontSize="20px";
-                    document.getElementById("wynik").innerHTML="";
                     document.getElementById("wynik").innerHTML=imie.toUpperCase()+" "+nazwisko.toUpperCase()+"<br>"+"<br>"+"Dziękuję, skontaktuję sie z tobą pod podany email:"+"<br>"+"<br>"+email;
                 }
             }

@@ -17,7 +17,7 @@ h1 {
     font-family: font;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(114, 63, 63);
-    color: #afafafa4;
+    color: #d1d1d1a4;
 }
 
 #w1, #w2, #w3 {
@@ -34,6 +34,7 @@ article {
 	align-self: center;
     flex-direction: column;
     padding:20px;
+    color:rgb(138, 138, 138);
 }
 
 .obrazki{ display: flex;
@@ -58,7 +59,8 @@ a > .screen:hover {
 
 .medalion {
     width: 170px;
-	height: 170px;
+    height: 170px;
+    cursor: pointer;
 }
 
 .wiedzmin {
@@ -130,6 +132,28 @@ nav {
 }
 
 footer{text-align: center;}
+
 .form{border: 2px solid rgb(126, 50, 50);
 background-color: #221f1f;
 color:  #7a7a7a;}
+
+#wpisz{
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 500px;
+    max-height: 250px;
+}
+
+#imie{width: 160px;
+height: 30px;}
+
+#nazwisko{width: 160px;
+    height: 30px;}
+
+#email{width: 160px;
+        height: 30px;}
+
+#button{
+    width: 80px;
+    height: 30px;;
+}
