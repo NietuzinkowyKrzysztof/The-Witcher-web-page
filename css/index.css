@@ -1,0 +1,107 @@
+/*Special thanks for Mikołaj Czajkowski for his voice*/
+
+header {text-align: center;}
+
+.medalion {
+		width: 170px;
+		height: 170px;
+		cursor: pointer;}
+	
+@keyframes medalion {
+		0% {
+			right: 1px;
+			top: 1px;
+			transform: rotate(2deg);
+		}
+		10% {
+			right: 1px;
+			top: -1px;
+			transform: rotate(-2deg)
+		}
+		20% {
+			right: 1px;
+			top: 1px;
+			transform: rotate(1deg)
+		}
+		30% {
+			right: -1px;
+			top: -1px;
+			transform: rotate(-2deg)
+		}
+		40% {
+			right: 1px;
+			top: 1px;
+			transform: rotate(-1deg)
+		}
+		50% {
+			right: -1px;
+			top: 1px;
+			transform: rotate(2deg)
+		}
+		60% {
+			right: 1px;
+			top: 1px;
+			transform: rotate(0deg)
+		}
+		70% {
+			right: -1px;
+			top: 1px;
+			transform: rotate(-1deg)
+		}
+		80% {
+			right: -1px;
+			top: -1px;
+			transform: rotate(2deg)
+		}
+		90% {
+			right: -1px;
+			top: 1px;
+			transform: rotate(-1deg)
+		}
+		100% {
+			right: -1px;
+			top: -1px;
+			transform: rotate(1deg)
+		}
+	}
+	
+.medalion:hover {
+		animation-name: medalion;
+		animation-duration: 1s;
+		position: relative;
+		animation-iteration-count: infinite;}
+
+h1 {
+	font-size: 75px;
+	margin-top: -10px;
+	font-family: font;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(126, 50, 50);
+	color: #e7e7e7;}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin: 0 auto;}
+
+.witcher {
+		text-align: center;
+		width: auto;}
+
+#image {
+	width: 110%;
+	height: auto;
+	transition: 0.5s;
+	border: 3px solid rgb(126, 50, 50);}
+
+#image:hover {
+	opacity: 0.4;}
+
+footer{opacity: 0.3;
+float: right;
+margin-right: 10px;}
+
+@media only screen and (max-width: 1000px) {
+	nav {
+		margin: auto;}}
