@@ -82,7 +82,7 @@ h1 {
 nav {
 	display: flex;
 	justify-content: space-around;
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;}
 
 .witcher {
@@ -90,7 +90,7 @@ nav {
 		width: auto;}
 
 #image {
-	width: 110%;
+	width: 105%;
 	height: auto;
 	transition: 0.5s;
 	border: 3px solid rgb(126, 50, 50);}
