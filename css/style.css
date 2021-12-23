@@ -1,291 +1,125 @@
-/*Specjalne podziękowania dla Mikołaja Czajkowskiego za użyczenie głosu */
-
-* {
-	scroll-behavior: smooth;
-}
-
 @font-face {
-	font-family: font;
-	src: url(../fonts/LEMONMILK-Medium.otf);
-}
+	font-family: header;
+	src: url(../fonts/LEMONMILK-Medium.otf);}
 
-header {
-	text-align: center;
-}
-
-h1 {
-	font-size: 75px;
-	margin-top: -10px;
-	font-family: font;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: rgb(114, 63, 63);
-	color: #ffffff;
-}
-
-#w1,
-#w2,
-#w3 {
-	font-size: 50px;
-	margin-top: -10px;
-	font-family: font;
-	text-align: center;
-}
-
-article {
-	background-color: #221f1fbd;
-	border: 3px solid rgb(126, 50, 50);
-	display: flex;
-	align-self: center;
-	flex-direction: column;
-	padding: 20px;
-	color: rgb(138, 138, 138);
-	margin-bottom: 200px;
-}
-
-.obrazki {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	text-align: center;
-}
-
-.w1 {
-	grid-area: w1;
-}
-
-.w2 {
-	grid-area: w2;
-}
-
-.w3 {
-	grid-area: w3;
-}
-
-nav {
-	display: grid;
-	grid-template-areas: "w1 w2 w3";
-	width: 70%;
-	margin: auto;
-	margin-bottom: 180px;
-}
-
-a>.screen {
-	width: 80%;
-	height: auto;
-	border: 3px solid rgb(126, 50, 50);
-	transition: 0.5s;
-	margin: auto;
-}
-
-a>.screen:hover {
-	width: 75%;
-	height: auto;
-	margin-left: 1px;
-}
-
-.medalion {
-	width: 170px;
-	height: 170px;
-	cursor: pointer;
-}
-
-@keyframes medalion {
-	0% {
-		right: 1px;
-		top: 1px;
-		transform: rotate(2deg);
+:root{
+	box-sizing: border-box;
+	--bloodyred:#8a0303;
+	scroll-behavior: smooth;
 	}
-	10% {
-		right: 1px;
-		top: -1px;
-		transform: rotate(-2deg)
-	}
-	20% {
-		right: 1px;
-		top: 1px;
-		transform: rotate(1deg)
-	}
-	30% {
-		right: -1px;
-		top: -1px;
-		transform: rotate(-2deg)
-	}
-	40% {
-		right: 1px;
-		top: 1px;
-		transform: rotate(-1deg)
-	}
-	50% {
-		right: -1px;
-		top: 1px;
-		transform: rotate(2deg)
-	}
-	60% {
-		right: 1px;
-		top: 1px;
-		transform: rotate(0deg)
-	}
-	70% {
-		right: -1px;
-		top: 1px;
-		transform: rotate(-1deg)
-	}
-	80% {
-		right: -1px;
-		top: -1px;
-		transform: rotate(2deg)
-	}
-	90% {
-		right: -1px;
-		top: 1px;
-		transform: rotate(-1deg)
-	}
-	100% {
-		right: -1px;
-		top: -1px;
-		transform: rotate(1deg)
-	}
-}
-
-.medalion:hover {
-	animation-name: medalion;
-	animation-duration: 1s;
-	position: relative;
-	animation-iteration-count: infinite;
-}
-
-.wiedzmin {
-	margin: 0 10px 0 10px;
-	text-align: center;
-	width: auto;
-}
-
-section {
-	width: 80%;
-	margin: auto;
-}
 
 body {
-	background-image: url(../img/tlo.png);
+	background-image: url(../img/background.png);
 	color: #ffffff;
 	background-size: cover;
 	background-repeat: repeat;
 	font-family: "Lato", sans-serif;
-	font-size: 20px;
-	margin: 0;
-	background-attachment: fixed;
-}
+	margin: 0 auto;
+	background-attachment: fixed;}
 
-#obrazek1 {
-	width: auto;
-	height: auto;
-	transition: 0.5s;
-	border: 3px solid rgb(126, 50, 50);
-}
-
-.wiedzmin:hover #obrazek1 {
-	opacity: 0.4;
-}
-
-@media only screen and (max-width: 1000px) {
-	nav {
-		display: grid;
-		grid-template-areas: "w1" "w2" "w3";
-		margin: auto;
-	}
-	body {
-		background-position: center;
-	}
-	a>.screen {
-		width: 250px;
-		height: 140px;
-		border: 3px solid rgb(126, 50, 50);
-		margin-top: 10px;
-	}
-	.obrazki {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-	.Bibliografia {
-		text-align: center;
-		padding: 10px;
-	}
-}
-
-.form {
-	border: 2px solid rgb(126, 50, 50);
-	background-color: #221f1f;
-	color: #7a7a7a;
-}
-
-#wpisz {
-	min-width: 200px;
-	min-height: 100px;
-	max-width: 500px;
-	max-height: 250px;
-	width: 90%;
-}
-
-#imie {
-	width: 180px;
-	height: 30px;
-}
-
-#nazwisko {
-	width: 180px;
-	height: 30px;
-}
-
-#email {
-	width: 180px;
-	height: 30px;
-}
-
-#button {
-	width: 80px;
-	height: 30px;
-}
-
-#wynik {
-	text-align: center;
-	color: #d1d1d1a4;
-	font-weight: bold;
-	margin-bottom: 20px;
-	height: auto
-}
-
-footer {
-	text-align: end;
-	margin-right: 10px;
-	color: #b4b4b47a
-}
-
-h3 {
-	font-family: font;
-	text-align: center;
-}
-
-a {
-	color: #b4b4b4c4;
-	word-wrap: break-word
-}
-
-.Formularz {
-	background-color: #221f1fd0;
-	border: 3px solid rgb(126, 50, 50);
-	padding: 20px;
-	width: 50%;
+.logo{
+	width:200px;
 	margin: auto;
-	text-align: center;
-	height: auto;
+	display: block;
+	cursor: pointer;
 }
 
-.Bibliografia {
-	background-color: #221f1fd0;
-	border: 3px solid rgb(126, 50, 50);
-	padding: 20px;
-	width: 50%;
-	margin: auto;
+.logo:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(2deg) translate(-1px, 2px);
+	}
+	10% {
+		transform: rotate(-2deg) translate(1px, 0px);
+	}
+	20% {
+		transform: rotate(1deg) translate(0px, -1px);
+	}
+	30% {
+		transform: rotate(-2deg)translate(1px, 2px);
+	}
+	40% {
+		transform: rotate(-1deg) translate(1px, 0px);
+	}
+	50% {
+		transform: rotate(2deg) translate(0px, -1px);
+	}
+	60% {
+		transform: rotate(0deg) translate(-2px, -1px);
+	}
+	70% {
+		transform: rotate(-1deg) translate(1px, 0px);
+	}
+	80% {
+		transform: rotate(2deg) translate(1px, 1px);
+	}
+	90% {
+		transform: rotate(-1deg) translate(-2px, -1px);
+	}
+	100% {
+		transform: rotate(1deg) translate(1px, 0px);
+	}
+}
+
+h1{
+	font-family: header;
 	text-align: center;
+	font-size: 4.3rem;
+	margin-top: -10px;
+	color: #af0000;
+	-webkit-text-stroke: 1px var(--bloodyred);
+	text-shadow: 0px 0px 14px #000000;}
+
+.covers{
+	text-align: center;
+}
+
+.covers img{
+	margin: 15px;
+	border: 2px solid var(--bloodyred);;
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+.covers img:hover{
+	opacity: 40%;
+}
+
+h2{
+	font-size: 3.5rem;
+	text-align: center;
+	margin-top: 120px;
+	text-shadow: 0px 0px 14px #000000;
+}
+
+article{
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	background-color: rgba(58, 58, 58, 0.9);
+	padding: 36px;
+	font-size: 1.40rem;
+	border-radius: 10px;
+	border: 2px solid var(--bloodyred);
+	color: #d10000;
+}
+
+.gameimg{
+	display: flex;
+	justify-content: space-around;
+	margin-top:20px;
+}
+
+.gameimg img{
+	width: 30%;
+	border: 2px solid var(--bloodyred);
+	transition: 0.2s;
+}
+
+.gameimg img:hover{
+	transform:scale(1.1);
 }
